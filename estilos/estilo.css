@@ -1,0 +1,169 @@
+#popup{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(211, 211, 255);
+    overflow: hidden;
+}
+
+button{
+    cursor: pointer;
+}
+
+.cuadro{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(130%,140%);
+    transition: 1.5s;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 80%;
+    background-color: antiquewhite;
+    z-index: 5;
+}
+#cuadro.activo{
+    transform: translate(-50%,-50%);
+}
+
+.cuadro-header{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.cuadro-header .cerrar{
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: bold;
+
+}
+
+.cuadro-body{
+    padding: 10px 10px;  
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#cubrir{
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(148, 210, 226, 0.513);
+    pointer-events: none
+}
+
+#cubrir.activo{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+
+
+
+
+
+/*******CHAT**********/
+.boton-chat{
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat{
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    height: 300px;
+    overflow: scroll;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: aliceblue;
+    pointer-events: none;
+    transition: 1s;
+}
+#chat.activo{
+    pointer-events: all;
+    opacity: 1;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+}
+
+.chat .cerrar{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*****EMAIL*********/
+#emailSec{
+    height: 100vh;
+    width: 100%;
+    background: rgb(36, 36, 36);
+}
+
+#emailSec form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 4px solid #BD17FF;
+    border-radius: 11px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border: 0;
+    border-bottom: 4px solid #BD17FF;
+    border-radius: 11px;
+}
+
+#emailSec input[type="submit"]{
+    margin: auto;
+    width: 166px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 20px 50px;
+    border-color: rgba(20, 251, 255, 0);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <script defer src="javascript/scriptPopup.js"></script>
+    <script defer src="javascript/scriptChat.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section id="popup">
+        <button data-modal-target="#cuadro">Leer más</button>
+        <div class="cuadro" id="cuadro">
+            <div class="cuadro-header">
+                <div class="title">Titulo</div>
+                <div data-close-button class="cerrar">&times;</div>
+            </div>
+            <div class="cuadro-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consectetur temporibus quisquam architecto veniam amet voluptatem incidunt error corporis quo, aliquid adipisci, quod at excepturi libero perferendis. Ullam minus magni nemo in accusantium possimus ipsa tempora impedit quidem non cumque distinctio beatae natus inventore laborum sint molestiae, reprehenderit hic nesciunt provident aliquid quas explicabo fuga similique. Quia dolor quod exercitationem soluta possimus natus rem aliquam voluptate hic ipsa delectus cumque repellat aperiam minima fugiat consequatur repudiandae, et nam ex unde, illo provident omnis. Minima debitis id non earum suscipit, nam quisquam similique culpa aliquam tempora dolor, beatae pariatur illo doloremque!
+            </div>
+        </div>
+        <div id="cubrir"></div>
+    </section>
+
+    <section id="chat-section">
+        <button class="boton-chat" data-modal-target="#chat">Chat</button>
+        <div class="chat" id="chat">
+            <div class="chat-header">
+                <div class="title">Chat</div>
+                <div data-close-button class="cerrar">&times;</div>
+            </div>
+            <div class="chat-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consectetur temporibus quisquam architecto veniam amet voluptatem incidunt error corporis quo, aliquid adipisci, quod at excepturi libero perferendis. Ullam minus magni nemo in accusantium possimus ipsa tempora impedit quidem non cumque distinctio beatae natus inventore laborum sint molestiae, reprehenderit hic nesciunt provident aliquid quas explicabo fuga similique. Quia dolor quod exercitationem soluta possimus natus rem aliquam voluptate hic ipsa delectus cumque repellat aperiam minima fugiat consequatur repudiandae, et nam ex unde, illo provident omnis. Minima debitis id non earum suscipit, nam quisquam similique culpa aliquam tempora dolor, beatae pariatur illo doloremque!
+            </div>
+        </div>
+    </section>
+
+    <section id="emailSec">
+       <form action="https://formsubmit.co/edilberto.sergio.valle.ortiz@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="Nombre" placeholder="Nombre" required>
+            <input type="text" name="Mensaje" placeholder="Mensaje..." required>
+            <input type="email" name="Email" placeholder="Correo@correo.com" required>
+            <button type="submit">Enviar</button>
+       </form>
+    </section>
+
+</body>
+</html>
