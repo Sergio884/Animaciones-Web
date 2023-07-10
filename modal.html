@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+    <link rel="stylesheet" href="estilos/modal.css">
+    <script defer src="javascript/scriptPopup.js"></script>
+    <title>Efectos Plantillas</title>
+</head>
+<body>
+    <section id="popup" class="blur">
+        <button onclick="toggle()">Ver Video</button>            
+    </section>
+    <div class="box" id="box">
+        <div class="box-header">
+            <div class="title">Se parte del mejor día de nuestras vidas</div>
+            <div class="close" onclick="toggle()">X</div>
+        </div>
+        <div class="box-body">
+            <video src="imagenes/countdown/atardecer.mp4" controls></video>
+        </div>
+    </div>
+</body>
+</html>
