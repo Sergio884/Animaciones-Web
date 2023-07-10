@@ -1,0 +1,77 @@
+body{
+    font-family: 'Great Vibes', cursive;
+    border: none;
+    margin: auto;
+}
+
+
+#relleno{
+    background: darkkhaki;
+    height: 900px;
+}
+
+#padrinos{
+    height: 100vh;
+    width: 100%;  
+}
+
+#padrinos .container{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#padrinos h2{
+    font-size: 30px;
+}
+
+.padrinos-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+.padrino{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.padrino .type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.padrino .type img{
+    width: 20%;
+    margin-bottom: 2px;
+}
+
+.padrino .type span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.padrino .names{
+    font-size: 16px;
+    font-weight: 500;
+    height: 49px;
+    display: flex;
+    flex-direction: column;
+}
+
+.padrino .names span{
+    margin-bottom: -3px;
+}
+
+.padrino .names .and{
+    font-size: 14px;
+}
