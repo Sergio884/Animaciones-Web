@@ -59,3 +59,31 @@ body{
 .countdown-container .segment{
     margin: 10px;
 }
+
+@media (max-width:500px){
+    .container{
+        margin-top: -25%;
+    }
+}
+
+@media (max-width:400px){
+    .container{
+        margin-top: -40%;
+    }
+
+    .container h2{
+        font-size: 50px;
+    }
+
+    .countdown-container .segment{
+        margin: 5px;
+    }
+
+    .countdown-container .number{
+        font-size: 35px;
+    }
+    
+    .countdown-container .unit{
+        font-size: 22px;
+    }
+}
