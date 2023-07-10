@@ -1,0 +1,61 @@
+body{
+    font-family: 'Great Vibes', cursive;
+    border: none;
+    margin: auto;
+}
+/* Countdown */
+#countdown{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.countdown-background{
+    height: 300px !important;
+    width: 100%;
+    background: url(../imagenes/countdown/atardecer.webp) no-repeat fixed;
+    background-size:contain;
+    background-position-y: 0%;
+    filter: brightness(75%);
+}
+
+.container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -15px;
+    text-shadow: 0px 5px 8px #000;
+}
+
+.container h2{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+
+.countdown-container{
+    display: flex;
+}
+
+
+.countdown-container .number{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.countdown-container .unit{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.countdown-container .segment{
+    margin: 10px;
+}

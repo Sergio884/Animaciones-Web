@@ -181,7 +181,7 @@ textarea {
 
 
 
-
+/* Video selector */
 #videoSlider{
     position: relative;
     height: 100vh;
@@ -233,4 +233,21 @@ textarea {
     transform: scale(1.1);    
     background: rgb(93, 0, 0);
     transition: 1s ease;
+}
+
+
+
+
+
+
+
+/* Countdown */
+#countdown{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
