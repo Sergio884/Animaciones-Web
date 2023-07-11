@@ -5,6 +5,7 @@ function show(){
     var showPX = document.querySelectorAll('.show-p-x');
     var showNY = document.querySelectorAll('.show-n-y');
     var showPY = document.querySelectorAll('.show-p-y');
+    var show = document.querySelectorAll('.show');
 
     for(var i = 0 ; i<showNX.length;i++){
         var windowHeight = window.innerHeight;
@@ -51,6 +52,18 @@ function show(){
             showPY[i].classList.add('active-p-y')
         }else{
             showPY[i].classList.remove('active-p-y')
+        }
+    }
+
+    for(var i = 0 ; i<show.length;i++){
+        var windowHeight = window.innerHeight;
+        var showTop = show[i].getBoundingClientRect().top;
+        var showPoint = 100;
+
+        if(showTop<windowHeight-showPoint){
+            show[i].classList.add('active')
+        }else{
+            show[i].classList.remove('active')
         }
     }
 }

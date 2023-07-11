@@ -1,0 +1,105 @@
+body{
+    font-family: 'Great Vibes', cursive;
+    border: none;
+    margin: auto;
+}
+
+#relleno{
+    background: darkkhaki;
+    height: 1000px;
+}
+
+#zigzag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgb(255, 245, 227);
+}
+
+#zigzag .title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+#zigzag .content{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#zigzag .content h3{
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+#zigzag .content span{
+    font-size: 28px;
+}
+
+#zigzag .row{
+    display: grid;
+}
+
+#zigzag .row.type-l{
+    grid-template-columns: 45% 55%;
+}
+
+#zigzag .row.type-r{
+    grid-template-columns: 53% 45%;
+}
+
+#zigzag img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    display: block;
+}
+
+#zigzag .type-l img{
+    -webkit-box-shadow: -5px 0px 18px -6px rgba(0,0,0,0.79); 
+    box-shadow: -5px 0px 18px -6px rgba(0,0,0,0.79);
+}
+
+#zigzag .type-r img{
+    -webkit-box-shadow: 5px 0px 18px -6px rgba(0,0,0,0.79); 
+    box-shadow: 5px 0px 18px -6px rgba(0,0,0,0.79);
+}
+
+@media (max-width:900px){
+    #zigzag .content{
+        width: 90%;
+    }
+
+    #zigzag .row.type-l{
+        grid-template-columns: 50% 50%;
+    }
+    
+    #zigzag .row.type-r{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width:600px){
+    #zigzag .content{
+        width: 90%;
+    }
+
+    #zigzag .row.type-l{
+        grid-template-columns: 100%;
+    }
+    
+    #zigzag .row.type-r{
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: 1fr;
+    }
+}
