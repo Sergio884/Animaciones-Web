@@ -88,24 +88,9 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript">
-        window.addEventListener('scroll',revelar);
 
-        function revelar(){
-            var mostrar = document.querySelectorAll('.show');
+    <section id="relleno">
 
-            for(var i = 0 ; i<mostrar.length;i++){
-                var windowHeight = window.innerHeight;
-                var revelarTop = mostrar[i].getBoundingClientRect().top;
-                var revelarPoint = 100;
-
-                if(revelarTop<windowHeight-revelarPoint){
-                    mostrar[i].classList.add('active')
-                }else{
-                    mostrar[i].classList.remove('active')
-                }
-            }
-        }
-    </script>
+    </section>
 </body>
 </html>
