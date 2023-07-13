@@ -4,27 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilo.css">
-    <script defer src="javascript/scriptPopup.js"></script>
+    <link rel="stylesheet" href="style/style.css">
     <script defer src="javascript/scriptChat.js"></script>
     <title>Efectos Plantillas</title>
 </head>
 <body>
-    <section id="popup" class="blur">
-            <button onclick="toggle()">Leer más</button>            
-    </section>
-    <div class="cuadro" id="cuadro">
-        <div class="cuadro-header">
-            <div class="title">Titulo</div>
-            <div class="close" onclick="toggle()">X</div>
-        </div>
-        <div class="cuadro-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consectetur temporibus quisquam architecto veniam amet voluptatem incidunt error corporis quo, aliquid adipisci, quod at excepturi libero perferendis. Ullam minus magni nemo in accusantium possimus ipsa tempora impedit quidem non cumque distinctio beatae natus inventore laborum sint molestiae, reprehenderit hic nesciunt provident aliquid quas explicabo fuga similique. Quia dolor quod exercitationem soluta possimus natus rem aliquam voluptate hic ipsa delectus cumque repellat aperiam minima fugiat consequatur repudiandae, et nam ex unde, illo provident omnis. Minima debitis id non earum suscipit, nam quisquam similique culpa aliquam tempora dolor, beatae pariatur illo doloremque!
-        </div>
-    </div>
-
-
-
     <section id="chat-section">
         <button class="boton-chat" data-modal-target="#chat">Chat</button>
         <div class="chat" id="chat">
@@ -38,88 +22,19 @@
         </div>
     </section>
 
-    <section id="emailSec">
-       <form action="https://formsubmit.co/edilberto.sergio.valle.ortiz@gmail.com" method="POST">
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
-            <input type="hidden" name="_subject" value="New submission!">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="Nombre" placeholder="Nombre" required>
-            <input type="text" name="Mensaje" placeholder="Mensaje..." required>
-            <input type="email" name="Email" placeholder="Correo@correo.com" required>
-            <button type="submit">Enviar</button>
-       </form>
-    </section>
-
     <section id="videoSlider">
         <iframe id="slider" width="560" height="315" src="https://www.youtube.com/embed/x6dKAPD267U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <ul class="navigation">
-            <li onclick="videoURL('https://www.youtube.com/embed/x6dKAPD267U')"><img src="/imagenes/video1.webp"></li>
-            <li onclick="videoURL('https://www.youtube.com/embed/I0hgXEJNp6k')"><img src="/imagenes/video2.webp"></li>
-            <li onclick="videoURL('https://www.youtube.com/embed/2i2khp_npdE')"><img src="/imagenes/video3.webp"></li>
-            <li onclick="videoURL('https://www.youtube.com/embed/pMtUr1jGI0I')"><img src="/imagenes/video4.webp"></li>
+            <li onclick="videoURL('https://www.youtube.com/embed/x6dKAPD267U')"><img src="media/video/video1.webp"></li>
+            <li onclick="videoURL('https://www.youtube.com/embed/I0hgXEJNp6k')"><img src="media/video/video2.webp"></li>
+            <li onclick="videoURL('https://www.youtube.com/embed/2i2khp_npdE')"><img src="media/video/video3.webp"></li>
+            <li onclick="videoURL('https://www.youtube.com/embed/pMtUr1jGI0I')"><img src="media/video/video4.webp"></li>
         </ul>
     </section>
     <script type="text/javascript">
         function videoURL(ubicacion){
             document.getElementById('slider').src = ubicacion;
         }
-    </script>
-
-
-
-
-    <!-- Countdown -->
-    <section id="countdown">
-        <h2>Faltan:</h2>
-        <div class="countdown-container">
-            <p>
-                <span class="number" id="days"></span> <span>días</span>
-            </p>
-
-            <p>
-                <span class="number" id="hours"></span> <span>horas</span>
-            </p>
-
-            <p>
-                <span class="number" id="minutes"></span> <span>minutos</span>
-            </p>
-
-            <p>
-                <span class="number" id="seconds"></span> <span>segundos</span>
-            </p>
-        </div>
-    </section>
-    <script>
-        //Fecha del evento
-        var countDownDate = new Date("July 12, 2023 17:00:00").getTime();
-
-        var countdownInterval = setInterval(function() {
-        var now = new Date().getTime();
-
-        var timeRemaining = countDownDate - now;
-
-        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-        (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor(
-        (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
-        );
-        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
-
-        if (timeRemaining < 0) {
-        clearInterval(countdownInterval);
-        document.getElementById("days").innerHTML = "0";
-        document.getElementById("hours").innerHTML = "0";
-        document.getElementById("minutes").innerHTML = "0";
-        document.getElementById("seconds").innerHTML = "0";
-        }
-    }, 1000);
     </script>
 </body>
 </html>

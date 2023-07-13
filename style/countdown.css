@@ -23,7 +23,7 @@ body{
 .countdown-background{
     height: 100%;
     width: 100%;
-    background: url(../imagenes/countdown/atardecer.webp) no-repeat;
+    background: url(../media/video/countdown/atardecer.webp) no-repeat;
     background-size:cover;
     background-position-y: 50%;
     background-position-x: 50%;
