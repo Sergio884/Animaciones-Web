@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../media/img/backgrounds/B1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .intro-container {
+    text-align: center;
+    padding-top: 100px;
+    color: var(--colorIntroText);
+    text-shadow: var(--firstTextShadow);
+    font-family: var(--fuente-cursiva);
+  }
+
+  h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 500px;
+    min-width: 250px;
+    height: auto;
+    width: 50%;
+  }
+
+  p {
+    font-size: 34px;
+    margin-top: 0;
+  }

@@ -1,0 +1,46 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    /* Cambia el calc(100% / numero de divs mostrados) para que veas cuantos se pueden ver */
+    flex: 0 0 calc(100% / 2);
+    height: 400px;
+    background-color: #ccc;
+    margin-right: 10px;
+   
+  }
+
+  .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-prev {
+    left: 10px;
+  }
+  
+  .carousel-next {
+    right: 10px;
+  }

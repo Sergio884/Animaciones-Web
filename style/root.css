@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'FogtwoNo5';
+    src: url('../media/fonts/FogtwoNo5.ttf') format('truetype');
+}
+
+:root{
+    --fuente-cursiva:'Great Vibes', cursive;
+    --fuente-woNo5 : 'FogtwoNo5';
+    --backgroundIntro: #bcbcbc70;
+    --dropShadowSmooth: drop-shadow(7px 9px 31px rgba(102,102,102,0.75));
+    --backgroundSelects: #fff;
+    --firstTextShadow: 3px 2px 6px rgba(0,0,0,0.37);
+    --colorIntroText : rgb(161, 150, 26);
+}
