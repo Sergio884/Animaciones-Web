@@ -1,0 +1,146 @@
+body{
+    font-family: 'Great Vibes', cursive;
+    border: none;
+    margin: auto;
+}
+
+#relleno{
+    background: darkkhaki;
+    height: 800px;
+}
+
+:root{
+    --content-font:'Lora', serif;
+    --lineColor: #02004a;
+    --lineText: white;
+}
+
+#funcionamiento{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    width: 100%;    
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#funcionamiento h1{
+    margin-top: 0px;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+}
+
+#funcionamiento .pasos{
+    position: absolute;
+    background-color: var(--lineColor);
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50%;
+    right: 42%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+#funcionamiento .pasos p{
+    color: var(--lineText);
+    font-size: 25px;
+    font-weight: 900;    
+}
+
+#funcionamiento .contenedor{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    width: 250px;
+    height: 850px;
+    margin-top: 40px;
+}
+#funcionamiento .raya{
+    position: absolute;
+    width: 3px;
+    height: 610%;
+    background-color: var(--lineColor);
+    top: -183px;
+    left: 49.6%;
+    z-index: 2 !important;
+}
+
+#funcionamiento .contenido{
+    position: relative;
+    left: 30px;
+    width: 80%;
+    height: 380px;
+    top: 2px !important;
+}
+
+
+.pasos .imagen{
+    left: 105px;
+    top: -10px;
+    position: absolute  ;
+    height: 140px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:50px;
+    border-radius: 10px;
+}
+
+.pie-img{
+    color: black !important;
+    font-size: 20px !important;
+    margin-top: 2px;
+    padding-left: 20px;
+    font-weight: 500 !important;
+    text-align: center;
+    font-family:  var(--content-font);
+}
+
+.dos .imagen{
+    left: -250px;
+} 
+
+.imagen img{
+    height: 130px;
+} 
+
+
+@media (max-width:615px) {
+    .pasos .imagen{
+        left: 70px;
+        height: 140px;
+        width: 155px;
+        z-index: -10;
+    }
+    .pasos .contenido{
+        right: 100px !important;
+    }
+    #funcionamiento{
+        margin-bottom: 20%;
+    }
+    #funcionamiento h1{
+        padding: 10px 10px;
+        font-size: 25px;
+    }
+    #funcionamiento .contenedor{
+        width: 65%;
+        margin-left: -8%;
+        align-items: baseline;
+    }
+    #funcionamiento img{
+        height: 110px;
+    }
+    .grande{
+        height: 80px !important;
+    }
+}
