@@ -11,17 +11,22 @@
   
   .carousel-item {
     /* Cambia el calc(100% / numero de divs mostrados) para que veas cuantos se pueden ver */
-    flex: 0 0 calc(100% / 2);
+    display: flex;
+    flex: 0 0 calc(100% / 4);
     height: 400px;
-    background-color: #ccc;
+    
     margin-right: 10px;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
    
   }
 
   .carousel-item img{
-    object-fit: cover;
-    object-position: center;
-    max-width: 100%;
+    width: 200px;
+    border-radius: 50%;    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.41);
+    margin-bottom: 10px;
   }
   
   .carousel-prev,
@@ -43,4 +48,24 @@
   
   .carousel-next {
     right: 10px;
+  }
+
+  @media (max-width:1200px) {
+    .carousel-item {
+      display: flex;
+      flex: 0 0 calc(100% / 3);
+    }
+  }
+  @media (max-width:768px) {
+    .carousel-item {
+      display: flex;
+      flex: 0 0 calc(100% / 2);
+    }
+  }
+
+  @media (max-width:512px) {
+    .carousel-item {
+      display: flex;
+      flex: 0 0 calc(100% / 1);
+    }
   }

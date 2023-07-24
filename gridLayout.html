@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
     <link rel="stylesheet" href="style/gridLayout.css">
+    <link rel="stylesheet" href="style/modalCarrousel.css">
     <script defer src="javascript/dinamicDisplay.js"></script>
     <link rel="stylesheet" href="style/dinamicDisplay.css">
     <title>Efectos Plantillas</title>
@@ -20,24 +21,34 @@
         </div>
         <div class="container">
             <div class="column">
-                <img class="show-p-x" src="media/img/grid/1.jpg" />
-                <img class="show-p-y" src="media/img/grid/2.jpg"/>
-                <img class="show-p-y" src="media/img/grid/3.jpg"/>
+                <img class="object-grid show-p-x" src="media/img/grid/1.jpg" />
+                <img class="object-grid show-p-y" src="media/img/grid/2.jpg"/>
+                <img class="object-grid show-p-y" src="media/img/grid/3.jpg"/>
             </div>
             <div class="column">
-                <img class="show-p-y" src="media/img/grid/4.jpg"/>
-                <img class="show-p-y" src="media/img/grid/5.jpg"/>
-                <img class="show-p-y" src="media/img/grid/6.jpg"/>
+                <img class="object-grid show-p-y" src="media/img/grid/4.jpg"/>
+                <img class="object-grid show-p-y" src="media/img/grid/5.jpg"/>
+                <img class="object-grid show-p-y" src="media/img/grid/6.jpg"/>
             </div>
             <div class="column">
-                <img class="show-n-x" src="media/img/grid/7.jpg"/>
-                <img class="show-p-y" src="media/img/grid/8.jpg"/>
-                <img class="show-p-y" src="media/img/grid/9.jpg"/>
+                <img class="object-grid show-n-x" src="media/img/grid/7.jpg"/>
+                <img class="object-grid show-p-y" src="media/img/grid/8.jpg"/>
+                <img class="object-grid show-p-y" src="media/img/grid/9.jpg"/>
             </div>
             <div class="column full-width show-p-y">          
-                <img src="media/img/grid/10.jpg" alt="Imagen 6" />
+                <img class="object-grid" src="media/img/grid/10.jpg" alt="Imagen 6" />
             </div>
         </div>
-    </section>            
+    </section>  
+    <div class="modal">
+        <span class="close-btn">&times;</span>
+        <span class="prev-btn">&#8249;</span>
+        <img class="modal-img" src="">
+        <span class="next-btn">&#8250;</span>
+    </div>
+    
+    <!-- <script src="javascript/dinamicDisplay.js"></script> -->
+    <script src="javascript/modalCarrouselGrid.js"></script>
+</body>          
 </body>
 </html>

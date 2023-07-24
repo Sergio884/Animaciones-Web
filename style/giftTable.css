@@ -1,0 +1,69 @@
+.gift-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.gift-object-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gift-object-container img{
+    width: 80px;
+}
+
+.gift-container p{
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
+.shops-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.shops-container img{
+    width: 200px;
+    filter: grayscale(50%);
+}
+.pay-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay-container img{
+    width: 80px;
+}
+
+.pay-container button{
+    border: 1px solid sandybrown;
+    background-color: ghostwhite;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pay-container button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media (max-width:572px){
+    .shops-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+}
