@@ -1,0 +1,58 @@
+body{
+    border: none;
+    margin: auto;
+}
+
+#relleno{
+    background: darkkhaki;
+    height: 100vh;
+}
+
+:root{
+    --item-img-size: 35px;
+    --item-img-position: 10px;
+    --background-music: rgba(255, 255, 255, 0.7);
+}
+
+/* MUSIC */
+
+#toggleButton {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border: none;
+}
+
+#toggleButton img{
+    position: fixed;
+    left: var(--item-img-position);
+    bottom: var(--item-img-position);
+    width: var( --item-img-size);
+    height: var( --item-img-size);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.7); 
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.7);
+    padding: 2px;
+    background: var(--background-music);
+}
+
+
+/* Whatsapp */
+
+
+#fixed-items .whatsapp img{
+    position: fixed;
+    right: var(--item-img-position);
+    bottom: var(--item-img-position);
+    width: var( --item-img-size);
+    height: var( --item-img-size);
+    transform: scale(1.1);
+    transition: 0.6s ease-in-out;
+}
+
+#fixed-items .whatsapp img:hover{
+    transform: scale(1.2);
+}
