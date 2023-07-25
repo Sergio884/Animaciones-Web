@@ -9,7 +9,7 @@ body{
 }
 
 :root{
-    --item-img-size: 35px;
+    --item-img-size: 45px;
     --item-img-position: 10px;
     --background-music: rgba(255, 255, 255, 0.7);
 }

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Establecer el volumen al 20%.
-    music.volume = 0.1;
+    music.volume = 0.2;
 
     // Agregar un evento de clic al botón para alternar la música.
     button.addEventListener('click', toggleMusic);
