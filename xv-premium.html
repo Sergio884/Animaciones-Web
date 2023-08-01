@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/root_xv.css">
+    <link rel="stylesheet" href="style/xv.css">
+    <link rel="stylesheet" href="style/navBarCenter.css">
+    <link rel="stylesheet" href="style/padrinos.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <script defer src="javascript/scriptPopup.js"></script>
+    <script defer src="javascript/countdown.js"></script>
+    <script defer src="javascript/dinamicDisplay.js"></script>
+    <link rel="stylesheet" href="style/dinamicDisplay.css">
+    <title>XV de Valeria</title>
+</head>
+<body>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="">Inicio</a>
+            <a href="">Lugar</a>
+            <a href="">Padrinos</a>
+            <a href="">Galeria</a>
+            <a href="">Damas y Caballeros de honor</a>
+            <a href="">Minuto a Minuto</a>
+            <a href="">Mesa de Regalos</a>
+            <a href="">Asistencia</a>
+        </div>
+    </div>
+
+    <div class="intro-container" class="blur">
+        <h1>Valeria Carrasco</h1>
+        <img src="media/img/xv/circulo_flores.png" alt="Imagen" />
+        <p>Te invito a mis XV</p>
+    </div>
+
+    <section class="parents-container show" class="blur">
+        <h2>Mis Padres</h2>
+        <div class="cut-line"></div>
+        <div class="parents-list">
+            <div class="parent">
+                <p>Isabel Moctezuma González</p>
+                <div class="large-line"></div>
+            </div>
+            <div class="parent">
+                <p>Guillermo Díaz Guerrero</p>
+                <div class="large-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="countdown" class="blur">
+        <div class="countdown-background"></div>
+        <div class="container">
+            <h2>Faltan</h2>
+            <div class="countdown-container">
+                <p class="segment">
+                    <span class="number" id="days"></span><span class="unit">días</span>
+                </p>
+    
+                <p class="segment">
+                    <span class="number" id="hours"></span><span class="unit">horas</span>
+                </p>
+    
+                <p class="segment">
+                    <span class="number" id="minutes"></span><span class="unit">minutos</span>
+                </p>
+    
+                <p class="segment">
+                    <span class="number" id="seconds"></span><span class="unit">segundos</span>
+                </p>
+            </div>
+        </div>  
+    </section>
+
+    <section id="padrinos" class="blur">
+        <div class="container">
+            <h2>Padrinos</h2>
+            <div class="padrinos-container">
+                <div class="padrino show-p-x">
+                    <div class="type">
+                        <img src="media/icons/cake.png" alt="Pastel">
+                        <span>Pastel</span>
+                    </div>          
+                    <div class="names">
+                        <span>Xochitl Salazar</span>
+                        <span class="and">&</span>
+                        <span>Richart Santomé</span>
+                    </div>          
+                </div>
+
+                <div class="padrino show-p-x">
+                    <div class="type">
+                        <img src="media/icons/cheers.png" alt="Pastel">
+                        <span>Bebida</span>
+                    </div>          
+                    <div class="names">
+                        <span>Xochitl Salazar</span>
+                    </div>          
+                </div>
+
+                <div class="padrino show-p-x">
+                    <div class="type">
+                        <img src="media/icons/dress.png" alt="Pastel">
+                        <span>Vestido</span>
+                    </div>          
+                    <div class="names">
+                        <span>Sofia Fernandez</span>
+                    </div>          
+                </div>
+
+                <div class="padrino show-n-x">
+                    <div class="type">
+                        <img src="media/icons/present.png" alt="Pastel">
+                        <span>Regalos</span>
+                    </div>          
+                    <div class="names">
+                        <span>Xochitl Salazar</span>
+                        <span class="and">&</span>
+                        <span>Richart Santomé</span>
+                    </div>          
+                </div>
+
+                <div class="padrino show-n-x">
+                    <div class="type">
+                        <img src="media/icons/food.png" alt="Pastel">
+                        <span>Comida</span>
+                    </div>          
+                    <div class="names">
+                        <span>Xochitl Salazar</span>
+                        <span class="and">&</span>
+                        <span>Richart Santomé</span>
+                    </div>          
+                </div>
+
+                <div class="padrino show-n-x">
+                    <div class="type">
+                        <img src="media/icons/flowers.png" alt="Pastel">
+                        <span>Ramo</span>
+                    </div>          
+                    <div class="names">
+                        <span>Richart Santomé</span>
+                    </div>          
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="zigzag" class="blur">
+        <div class="container">
+            <div class="row type-l">
+                <div class="content show-p-y">
+                    <h3>Iglesia</h3>
+                    <span>
+                        La primer etapa de la ceremonia será llevada acabo a las
+                    </span>
+                    <b>11:00</b>
+                    <section id="popup" class="blur">
+                        <button onclick="toggle('box-1')">Ver Video</button>            
+                    </section>
+                </div>
+                <div class="image show-n-x">
+                    <img src="media/img/church.jpg">
+                </div>
+            </div>
+
+            <div class="row type-r">
+                <div class="image show-p-x">
+                    <img src="media/img/wedding.jpg">
+                </div>
+                <div class="content show-p-y">
+                    <h3>Fiesta</h3>
+                    <span>
+                        El evento se realizará en el salón de fiestas Mote Oche                        
+                    </span>
+                    <b>11:00</b>
+                    <section id="popup" class="blur">
+                        <button onclick="toggle('box-2')">Ver Video</button>            
+                    </section>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <div class="box" id="box-1">
+        <div class="box-header">
+            <div class="title">Se parte del mejor día de nuestras vidas</div>
+            <div class="close" onclick="toggle('box-1')">X</div>
+        </div>
+        <div class="description">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita cupiditate quisquam delectus? Earum!
+            </p>
+        </div>
+        <div class="box-body">
+            <iframe class="item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.851881892637!2d-99.2710587!3d19.359929!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201d1d38e418f%3A0x72089930261bffb8!2sSaorus!5e0!3m2!1ses-419!2smx!4v1688841989775!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="box" id="box-2">
+        <div class="box-header">
+            <div class="title">Se parte del mejor día de nuestras vidas</div>
+            <div class="close" onclick="toggle('box-2')">X</div>
+        </div>
+        <div class="description">
+            <p>
+                Salón de Fiestas
+            </p>
+        </div>
+        <div class="box-body">
+            <video class="item" src="media/video/countdown/atardecer.mp4" controls></video>
+        </div>
+    </div>
+</body>
+</html>

@@ -13,7 +13,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: rgb(255, 245, 227);
 }
 
 #zigzag .title{
@@ -46,6 +45,7 @@ body{
 }
 
 #zigzag .row{
+    width: 100vw;
     display: grid;
 }
 
