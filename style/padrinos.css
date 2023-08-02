@@ -1,8 +1,3 @@
-body{
-    font-family: 'Great Vibes', cursive;
-    border: none;
-    margin: auto;
-}
 
 
 #relleno{
@@ -13,9 +8,10 @@ body{
 #padrinos{
     height: 380px;
     width: 100%;  
+   
 }
 
-#padrinos .container{
+#padrinos .container-padrinos{
     margin: auto;
     width: 80%;
     display: flex;

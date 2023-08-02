@@ -5,6 +5,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 4rem;
+   
 }
 
 .parents-list{
@@ -14,6 +16,9 @@
     align-items: center;
     column-gap: 2rem;
     
+}
+.parents-list :nth-child(3){
+    width: 100%;
 }
 
 .parent{

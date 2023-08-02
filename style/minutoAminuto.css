@@ -1,5 +1,5 @@
 body{
-    font-family: 'Great Vibes', cursive;
+    
     border: none;
     margin: auto;
 }
@@ -17,7 +17,7 @@ body{
 
 #funcionamiento{
     padding-top: 30px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     width: 100%;    
     display: flex;    
     flex-direction: column;

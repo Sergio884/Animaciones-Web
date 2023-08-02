@@ -1,19 +1,9 @@
-body{
-    font-family: 'Great Vibes', cursive;
-    border: none;
-    margin: auto;
-}
-
-#relleno{
-    background: darkkhaki;
-    height: 1000px;
-}
-
 #zigzag {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: rgb(255, 245, 227);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #zigzag .title{
@@ -33,6 +23,7 @@ body{
     justify-content: center;
     text-align: center;
     padding-bottom: 10px;
+    
 }
 
 #zigzag .content h3{
@@ -72,6 +63,10 @@ body{
 #zigzag .type-r img{
     -webkit-box-shadow: 5px 0px 18px -6px rgba(0,0,0,0.79); 
     box-shadow: 5px 0px 18px -6px rgba(0,0,0,0.79);
+}
+
+#zigzag button{
+    margin-bottom: 20px;
 }
 
 @media (max-width:900px){

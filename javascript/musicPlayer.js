@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Variable para controlar si la música está en pausa o reproduciendo.
     let isPlaying = true;
-
+    music.pause();
     // Función para cambiar el ícono y controlar la música.
     function toggleMusic() {
         if (isPlaying) {

@@ -1,5 +1,5 @@
 // modalCarrousel.js
-const container = document.querySelector(".container");
+const container = document.querySelector(".container-grid");
 const images = Array.from(container.querySelectorAll("img.object-grid"));
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modal-img");

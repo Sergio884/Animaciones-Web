@@ -1,10 +1,45 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: url(../media/img/backgrounds/B1.jpg);
+    background-size: 300%;
+   
+}
+
+
 h2{
     font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 34px;
 }
 
 p{
-    font-size: 20px;
+    font-size: 14px;
+    font-family: 'Lora', serif !important;
 }
+span{
+    font-size: 14px !important;
+    font-family: 'Lora', serif !important;
+}
+
+.tex-blue{
+    color: rgb(31, 33, 176);
+}
+
+.subtitle{
+    color: rgb(159, 55, 26);
+    font-size: 18px;
+}
+
+button{
+    border: 1px solid sandybrown;
+    background-color: ghostwhite;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
 .cut-line{
     height: 2px;
     background-color: rgb(210, 142, 59);

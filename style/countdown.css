@@ -4,10 +4,7 @@ body{
     margin: auto;
 }
 
-#relleno{
-    background: darkkhaki;
-    height: 500px;
-}
+
 
 /* Countdown */
 #countdown{
@@ -17,13 +14,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
+   
 }
 
 .countdown-background{
     height: 100%;
     width: 100%;
-    background: url(../media/video/countdown/atardecer.webp) no-repeat;
+    background: url(../media/video/cuenta/1.webp) no-repeat;
+    /* background-color: #c2c2c2; */
     background-size:cover;
     background-position-y: 50%;
     background-position-x: 50%;
@@ -31,20 +30,21 @@ body{
 }
 
 .container{
-    color: white;
+    color: rgb(214, 214, 214);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
     margin-top: -15px;
-    text-shadow: 0px 5px 8px #000;
+    text-shadow: 0px 2px 2px #2b2b2b;
 }
 
 .container h2{
     font-size: 60px;
     font-weight: 700;
     margin-bottom: -10px;
+    color: #e6e6e6;
 }
 
 .countdown-container{
@@ -54,12 +54,13 @@ body{
 
 .countdown-container .number{
     font-size: 40px;
-    font-weight: 700;
+    
+    font-size: 25px !important;
 }
 
 .countdown-container .unit{
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 20px !important;
+    
 }
 
 

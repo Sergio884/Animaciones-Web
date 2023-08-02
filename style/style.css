@@ -21,7 +21,7 @@ body{
     overflow: scroll;
     border: 2px solid #000;
     border-radius: 10px;
-    background-color: aliceblue;
+    
     pointer-events: none;
     transition: 1s;
     z-index: 2;
